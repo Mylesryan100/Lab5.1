@@ -66,6 +66,7 @@ cart.addEventListener("click", (event) => {
   const item = button.closest("li");
 
   if (!item) return; 
+  
   const price = parseFloat(item.dataset.price);
   const quantitySpan = item.querySelector(".quantity");
   let quantity = parseInt(quantitySpan.textContent);
